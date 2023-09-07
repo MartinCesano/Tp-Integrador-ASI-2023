@@ -1,36 +1,62 @@
-body {
+body {/* este es el body no se modifico mucho, contiene el background y tiene el style sisplay*/
     width: 100%;
     height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-image: url(FondoLogin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-h1 {
-    margin: 0;
-    text-align: center;
-    background-color: blue;
-    box-sizing: border-box;
-}
-
-.login-box {
+.tittle-box{ /* esta caja es la del titulo, explico en el interior que hace cada cosa*/
     background-color: rgb(83, 124, 119,0.8);
+    border-radius: 10px;
+    margin-left: auto;/* centro la caja) */
+    margin-right: auto;/* Centro la caja */
+    margin-top: 4%;
+    margin-bottom: 5%;
+    height: 70px;
+    width: 600px;
+    align-items: center; /* acomoda el texto de adentro al medio */
+    display: flex;  /* Centra verticalmente el contenido */
+}
+h1{/* este es el h1 del titulo solo esta centrado en la caja del tittle-box*/
+    margin:0;
+    padding: 0;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+}
+.login-box {/* esta es la caja del div, el flex direction column va a acomodar todos los items de adentro en columnas, y el text align centra la caja*/
     margin: 0; 
     border: 0;
     flex-direction: column;
-    margin-left:20%;
-    margin-right:20%;
-}
-
-.login-box h2 {
-    border: 1px solid black;
-    color:white;
     text-align: center;
-    margin:0 5em;
+    padding: 0;
+}
+.login-box__label{/* esta es la caja de los label y el display:block; sirve para que se acomoden en columnas el margen es para separar los input */
+    display: block;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.login-box__label__input{/* Cambia todo lo que este en el input del login-box*/
+    background-color: rgb(83, 124, 119,0.8);
+    color:white;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.login-box__submit{/* Cambia todo lo que este dentro del submit ingresar*/
+    background-color: rgba(0, 120, 106, 0.8);
+    color:black;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.login-box__label__input::placeholder {
+    color: #000000; /* Cambia el color del texto del input a negro (#999) */
 }
