@@ -60,3 +60,6 @@ h1{/* este es el h1 del titulo solo esta centrado en la caja del tittle-box*/
 .login-box__label__input::placeholder {
     color: #000000; /* Cambia el color del texto del input a negro (#999) */
 }
+fieldset{/*le saco las rayas del fieldset*/
+    border: none;
+}
