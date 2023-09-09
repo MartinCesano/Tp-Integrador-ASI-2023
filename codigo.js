@@ -11,7 +11,7 @@ loginForm.addEventListener("submit", function (event) {// esto es un evento cuan
     const usuario = document.getElementById("usuario").value;//guardo el valor de usuario en una variable
     const contraseña = document.getElementById("Contraseña").value;//guardo el valor de contraseña en una variable
     if (loguear(usuario, contraseña, listaUserPassword)){//si entro hacer o no entro
-        alert("Correcto");
+        window.location.href = "principal.html";
     }else{
         alert("Incorrecto");
     }

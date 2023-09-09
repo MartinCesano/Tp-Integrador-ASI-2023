@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: rgb(83, 124, 119);
+    height: 90px;
+}
+
+.img-UTN {
+    height: 70px;
+    width: 10px;
+}
+
+/*centra horizontalmente los elementos dentro de .content */
+.content > * {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.form-search {
+    flex-grow: 2; /* Aumenta el tamaño de este elemento para que ocupe más espacio horizontal */
+    display: flex;
+    align-items: center;
+    background-color: rgb(203, 255, 250);
+    border-radius: 15px;
+}
+
+.content__input {
+    background: none; /*esto le saca el fondo del input*/
+    font-size: 30px;
+    margin-left: 10px;
+}
+.content__input:focus{/*esto le va a sacar los bordes cuando escribas en el input*/
+    outline: none;
+}
+
+.boton-imagen-search{
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    background-image: url('images/search.svg'); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Evita repetir la imagen */
+    margin-left: auto;
+    margin-right: 3px;
+    background-color: transparent; /*esto hace que no se vea el fondo del boton*/
+}
+
+
+.boton-imagen-notification {
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    background-image: url('images/notification.svg'); 
+    background-repeat: no-repeat; 
+    background-color: transparent;
+}
+.boton-imagen-trolley{
+    width: 50px; 
+    height: 50px; 
+    background-image: url('images/trolley.svg');
+    background-repeat: no-repeat; 
+    background-color: transparent;
+
+}
+.boton-imagen-profile{
+    width: 50px; 
+    height: 50px; 
+    background-image: url('images/profile.svg'); 
+    background-repeat: no-repeat; 
+    background-color: transparent;
+}
