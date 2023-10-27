@@ -1,6 +1,7 @@
 const loginForm = document.getElementById("login-form");
 listaUserPassword = ["martin:gaido", "martin:cesano", "valentina:chiappero", "jimena:romero"];
 
+
 function loguear(nombre, contraseña, lista){//esta funcion hace le damos el usuario y contraseña y comprueba si esta en la lista retorna un valor true o false
     nombreContraseña = nombre + ":" + contraseña
     return lista.includes(nombreContraseña);
@@ -11,11 +12,16 @@ loginForm.addEventListener("submit", function (event) {// esto es un evento cuan
     const usuario = document.getElementById("usuario").value;//guardo el valor de usuario en una variable
     const contraseña = document.getElementById("Contraseña").value;//guardo el valor de contraseña en una variable
     if (loguear(usuario, contraseña, listaUserPassword)){//si entro hacer o no entro
-        window.location.href = "principal.html";
+        window.location.href = "carga.html";
+
     }else{
         alert("Incorrecto");
     }
     // Limpia los campos de entrada después de obtener los valores
     document.getElementById("usuario").value = "";
     document.getElementById("Contraseña").value = "";
+
+
 });
+
+
