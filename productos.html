@@ -8,140 +8,89 @@
     <link rel="stylesheet" type="text/css" href="stylesProductos.css">
 </head>
 
+<header>
+	
 
+</header>
 
 <body>
     <!-- Contenido de tu página -->
+	<div class="contenedor">
 
 
+		<div class="header_Contenedor">
+			
+			<div class="volver">
+				<button class="btn-volver" onclick="volver()">
+					<img src="images/volver.png" alt="Volver">
+				</button>
+			</div>
 
-<header class="header">
+			<div class="header-producto">
+				<h1>PRODUCTOS</h1>
+			</div>
+
+			<div class="carrito">
+				<button class="btn-volver" onclick="volver()">
+					<img src="images/carrito.png" alt="Volver">
+				</button>
+			</div>
+		</div> 
+		<div class="header_contenedor_fila2">
+			<div class="nombre-destacado">Destacados</div>
+			<div class="nombre-destacado">Comidas Preparadas</div>
+			<div class="nombre-destacado">Bebidas</div>
+			<div class="nombre-destacado">Cafetería</div>
+			<div class="nombre-destacado">Snacks</div>
+		</div>
+
+	<main>
 	
-	<div class="header-content">
-		<div class="header-logo">
-			<h1 class="logo">Frames</h1>
-		</div>
-		<nav class="header-navigation">
-			<a href="#">About</a>
-			<a href="#" class="link-button">Your Cart<i class="material-icons-outlined">shopping_cart</i></a>
-		</nav>
-	</div>
-</header> 
-<main>
-	<div class="responsive-container">
-		<div class="grid">
-			<div class="grid-column">
-								<a class="product" href="#">
-					<div class="product-image">
-						<img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Cosmonaut</h2>
-							<p class="product-price">$ 10</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-
-				<a class="product" href="#">
-					<div class="product-image">
-						<img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Monster Milkshake</h2>
-							<p class="product-price">$ 9</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-				<a class="product" href="#">
-					<div class="product-image">
-							<img src="https://assets.codepen.io/285131/pink-pastel-juicy-banana.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Juicy Banana</h2>
-							<p class="product-price">$ 9</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-			</div>
-			<div class="grid-column">
-				<a class="product" href="#">
-					<div class="product-image">
-						<img src="https://assets.codepen.io/285131/palmistry.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Palmistry</h2>
-							<p class="product-price">$ 9</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-				<a class="product" href="#">
-					<div class="product-image"> 
-						<img src="https://assets.codepen.io/285131/fish-gas-mark.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Fish With Gas Mask</h2>
-							<p class="product-price">$ 12</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-				<a class="product" href="#">
-					<div class="product-image">
-						<img src="https://assets.codepen.io/285131/mysterious-gangster-character-style.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Gangster</h2>
-							<p class="product-price">$ 5</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-			</div>
-			<div class="grid-column">
-				<a class="product" href="#">
-					<div class="product-image">
-						<img src="https://assets.codepen.io/285131/adventure.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Adventure in a Bottle</h2>
-							<p class="product-price">$ 15</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-				<a class="product" href="#">
-					<div class="product-image">
-						<img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" />
-					</div>
-					<div class="product-content">
-						<div class="product-info">
-							<h2 class="product-title">Smoking Ain't Cool</h2>
-							<p class="product-price">$ 5</p>
-						</div>
-						<button class="product-action"><i class="material-icons-outlined">favorite_border</i></button>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="credits">
 		<div class="responsive-container">
-		<h3>Illustrations by Freepik</h3>
-	<a href='https://www.freepik.com/' target="_blank">Check out their amazing work - www.freepik.com</a>
-		</div>
-	</div>
-</main>
+			<div class="grid">
+				<div class="grid-column">
 
+					<div class="product" href="#">
+						<div class="product-image">
+							<img src="https://assets.codepen.io/285131/cosmonaut.jpg" alt="Cafe Jarrito" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Cafe Jarrito</h2>
+								<p class="product-price">$ 650</p>
+							</div>
+							<div class="product-actions">
+								<div class="product-add">
+									<label for="quantity">Cantidad:</label>
+									<input type="number" id="quantity" name="quantity" value="1" min="1">
+									<button class="add-to-cart-btn">Añadir</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+
+					
+
+					
+				</div>
+				<div class="grid-column">
+					
+					
+
+
+	
+				</div>
+				<div class="grid-column">
+					
+
+
+				</div>
+			</div>
+		</div>
+	
+</main>
+</div>
 </body>
 </html>
