@@ -12,8 +12,6 @@
 body{
 	margin: 0;
 	background-image: url(FondoLogin.jpg);
-	
-	
 	line-height: 1.5;
 	background-attachment: fixed;
 	background-size: cover;
@@ -33,6 +31,7 @@ body{
 	
 }
 
+
 header .encabezado {
 	display: flex;
 	justify-content: space-between; /* Añadido para distribuir el espacio entre los elementos */
@@ -41,25 +40,34 @@ header .encabezado {
 	padding: 10px; /* Añadido para mejorar el aspecto visual */
   }
   
-  header .encabezado a {
-	display: flex;
+  .encabezaso__pedir,.encabezaso__inicio, .encabezaso__areaPersonal,.encabezaso__perfil  {
 	align-items: center;
 	text-decoration: none;
 	color: white;
   }
 
-
-  .perfilImagen,.casaImagen, .areaPersonalImagen,
-  .pedirImagen {
-	max-width: 100px;
-	margin-right: 5px;
-  }
-
   
-  .usuario {
-	margin: 0;
-	margin-left: auto;
+.caja__a{
+	display: flex;
+	
+}
+
+.rectangulo{
+	max-width: 150px;
+	opacity: 0;
+}
+.rectangulo__mostrar{
+	max-width: 150px;
+}
+
+.pedirImagen,.casaImagen, .areaPersonalImagen {
+	max-width: 100px;
   }
+
+.perfilImagen{
+	max-width: 80px;
+  }
+
 
 
 @media all and (max-width: 600px) {
