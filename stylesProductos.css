@@ -29,10 +29,38 @@ body{
 	margin-bottom: 100px;
 	background: white;
 	border-radius: 3%;
-
-	
 	
 }
+
+header .encabezado {
+	display: flex;
+	justify-content: space-between; /* Añadido para distribuir el espacio entre los elementos */
+	align-items: center;
+	background-color: orange;
+	padding: 10px; /* Añadido para mejorar el aspecto visual */
+  }
+  
+  header .encabezado a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+  }
+
+
+  .perfilImagen,.casaImagen, .areaPersonalImagen,
+  .pedirImagen {
+	max-width: 100px;
+	margin-right: 5px;
+  }
+
+  
+  .usuario {
+	margin: 0;
+	margin-left: auto;
+  }
+  
+
 
 img {
 	max-width: 100%;
@@ -68,14 +96,6 @@ body {
 	margin-right: auto;
 }
 
-.header {
-	border-bottom: 1px solid #d0d0d0;
-	min-height: 60px;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	display: flex;
-	justify-content: center;
-}
 
 .header-content {
 	display: flex;
