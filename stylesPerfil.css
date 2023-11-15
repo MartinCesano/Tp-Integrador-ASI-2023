@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+
+
+body{
+	margin: 0;
+	background-image: url(FondoLogin.jpg);
+	line-height: 1.5;
+	background-attachment: fixed;
+	background-size: cover;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+.contenedor{
+	max-width: 80%;
+	min-height: 80%;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background: white;
+	border-radius: 3%;
+	
+}
+
+
+header .encabezado {
+	display: flex;
+	justify-content: space-between; /* Añadido para distribuir el espacio entre los elementos */
+	align-items: center;
+	background-color: orange;
+	padding: 10px; /* Añadido para mejorar el aspecto visual */
+  }
+  
+  .encabezaso__pedir,.encabezaso__inicio, .encabezaso__areaPersonal,.encabezaso__perfil  {
+	align-items: center;
+	text-decoration: none;
+	color: white;
+  }
+
+  
+.caja__a{
+	display: flex;
+	
+}
+
+.rectangulo{
+	max-width: 150px;
+	opacity: 0;
+}
+.rectangulo__mostrar{
+	max-width: 150px;
+}
+
+.pedirImagen,.casaImagen, .areaPersonalImagen {
+	max-width: 100px;
+  }
+
+.perfilImagen{
+	max-width: 80px;
+  }
+
+
+
+@media all and (max-width: 600px) {
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1.5rem;
+	}
+
+	.grid-column {
+		& > * + * {
+			margin-top: 1.5rem;
+		}
+	}
+}
