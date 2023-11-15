@@ -1,5 +1,5 @@
 const miBoton = document.getElementById("miBoton");
-const listaUserPassword = ["martin:gaido", "martin:cesano", "valentina:chiappero", "jimena:romero"];
+const listaUserPassword = ["martin:gaido", "martin:cesano", "valentina:chiappero", "jimena:romero", "franco:ferraro", "virginia:luque", "hebe:milanesio"];
 
 function loguear(nombre, contraseña, lista) {
     nombreContraseña = nombre + ":" + contraseña;
